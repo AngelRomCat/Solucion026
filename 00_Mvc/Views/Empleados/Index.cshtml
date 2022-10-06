@@ -55,9 +55,10 @@
             @Html.DisplayFor(modelItem => item.Notes)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EmployeeID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EmployeeID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EmployeeID }) |
+            @Html.ActionLink("Edit", "Edit", new { id = item.EmployeeID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EmployeeID }) |
+            @Html.ActionLink("DetailsAjax", "DetailsAjax", new { id = item.EmployeeID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EmployeeID }) |
             @Html.ActionLink("Pedidos de este Empleado", "Index", "Pedidos", new { id = item.EmployeeID, madre = "Empleado", nombreMadre = Model.FirstOrDefault().FirstName }, null)
         </td>
     </tr>
